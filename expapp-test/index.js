@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const https = require("https");
-const post = 3000;
+const port = 3000;
 
 function allTodos() {
     return[{
@@ -46,6 +46,7 @@ app.get("/joke", (req, res) => {
         });
     })
 });
+
 
 app.listen(port, () => {
     console.log(`Listening on port => ${port}`);
